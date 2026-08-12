@@ -1,7 +1,5 @@
 # Rockland Policy Desk
 
-Policy Desk is a free, static, evidence-grounded chatbot for Rockland's draft information-security policies. It runs in the browser without an API key and can be hosted on GitHub Pages or any static/worker host.
-
 ## Included knowledge base
 
 - **24 draft policies:** ISMSP01 through ISMSP24
@@ -22,14 +20,12 @@ npm run dev
 
 Open `http://127.0.0.1:3000`.
 
-## Publish free with GitHub Pages
+## Published with GitHub Pages
 
 1. Create a GitHub repository and upload this package.
 2. Push the files to the `main` branch.
 3. In GitHub, open **Settings → Pages** and set **Source** to **GitHub Actions**.
 4. The included workflow publishes the `public` folder automatically after each push.
-
-No API key or paid server is required for this static evidence-search version.
 
 ## Verify and build
 
