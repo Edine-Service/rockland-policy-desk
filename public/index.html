@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17352d" />
+    <meta name="description" content="Ask questions and get evidence-backed answers from Rockland policies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Policy Desk | Rockland" />
+    <meta property="og:description" content="Search 24 draft ISMS policies and get answers with page-level evidence." />
+    <meta property="og:image" content="og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Policy Desk | Rockland" />
+    <meta name="twitter:description" content="24 ISMS policies. Answers with evidence." />
+    <meta name="twitter:image" content="og.png" />
+    <title>Policy Desk | Rockland</title>
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Policy Desk home">
+          <span class="brand-mark">P</span>
+          <span><strong>Policy Desk</strong><small>Rockland</small></span>
+        </a>
+        <div class="topbar-status"><span class="status-dot"></span>Draft library indexed <span class="draft-pill">24 policies</span></div>
+        <button class="mobile-sources" id="mobileSources" type="button">Sources <span>1</span></button>
+      </header>
+
+      <div class="workspace">
+        <aside class="library-panel" aria-label="Policy library">
+          <div class="eyebrow">Knowledge base</div>
+          <h2>Your policies</h2>
+          <p class="library-copy">Choose one policy or search the complete draft ISMS library.</p>
+          <div class="policy-list" id="policyList" aria-label="Indexed policies"></div>
+
+          <div class="index-card">
+            <div class="index-heading"><span>Index health</span><strong>Ready</strong></div>
+            <div class="progress"><span></span></div>
+            <dl>
+              <div><dt>Policies</dt><dd id="policyCount">—</dd></div>
+              <div><dt>Searchable controls</dt><dd id="controlCount">—</dd></div>
+              <div><dt>Pages indexed</dt><dd id="pageCount">—</dd></div>
+            </dl>
+          </div>
+
+          <div class="trust-note">
+            <span class="shield">✓</span>
+            <div><strong>Evidence-only mode</strong><p>If the draft policies do not support an answer, Policy Desk will say so.</p></div>
+          </div>
+        </aside>
+
+        <main class="chat-panel">
+          <div class="chat-heading">
+            <div>
+              <div class="eyebrow">Policy assistant</div>
+              <h1 id="scopeTitle">Ask across all ISMS policies</h1>
+              <p class="scope-note" id="scopeNote">24 policies · 82 pages · Draft corpus</p>
+            </div>
+            <button class="clear-button" id="clearChat" type="button" title="Start a new conversation">New conversation</button>
+          </div>
+
+          <div class="conversation" id="conversation" aria-live="polite">
+            <div class="message assistant-message welcome-message">
+              <div class="assistant-avatar">P</div>
+              <div class="message-content">
+                <div class="message-meta">Policy Desk <span>Just now</span></div>
+                <div class="bubble">
+                  <p>I’m ready. I search <strong>24 Rockland ISMS draft policies</strong> and show the exact policy, page, and section behind every answer.</p>
+                  <p class="muted">Try one of these:</p>
+                  <div class="suggestions" aria-label="Suggested questions">
+                    <button type="button">What is the minimum password length?</button>
+                    <button type="button">How quickly must a security incident be reported?</button>
+                    <button type="button">What are the rules for remote access?</button>
+                    <button type="button">How often should critical backups be tested?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="composer" id="questionForm">
+            <label for="question" class="sr-only">Ask a policy question</label>
+            <textarea id="question" rows="1" maxlength="500" placeholder="Ask a question about any ISMS policy…" required></textarea>
+            <button id="sendButton" type="submit" aria-label="Send question"><span>Ask</span><span aria-hidden="true">→</span></button>
+            <p>Answers use the indexed draft text only. Verify critical decisions and final wording with Information Security.</p>
+          </form>
+        </main>
+
+        <aside class="evidence-panel" id="evidencePanel" aria-label="Answer sources">
+          <div class="evidence-header">
+            <div><div class="eyebrow">Evidence</div><h2>Answer sources</h2></div>
+            <button id="closeSources" class="close-sources" type="button" aria-label="Close sources">×</button>
+          </div>
+          <div id="evidenceContent" class="empty-evidence">
+            <div class="document-stack" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Sources will appear here</h3>
+            <p>Ask a question to see the policy clauses used in the answer.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+{
+  "source": {
+    "id": "ISMS-NEW-DRAFT",
+    "title": "Rockland Information Security Management System Policies",
+    "organization": "Rockland",
+    "status": "Draft",
+    "sourceFile": "ISMS New - Draft.pdf",
+    "pages": 82,
+    "indexedPages": 82,
+    "policyCount": 24,
+    "controlCount": 1202,
+    "indexedOn": "2026-08-12",
+    "note": "Draft policy content. Verify critical decisions with Information Security."
+  },
+  "generatedOn": "2026-08-12",
+  "totalQuestions": 12000,
+  "questionsPerPolicy": 500,
+  "policies": [
+    {
+      "policyId": "ISMSP01",
+      "title": "Password Security Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP02",
+      "title": "Acceptable Use Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP03",
+      "title": "Email Access and Usage Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP04",
+      "title": "Internet Access & Usage Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP05",
+      "title": "Removable Media Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP06",
+      "title": "Malware Protection Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP07",
+      "title": "Remote Access Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP08",
+      "title": "Privacy & Protection Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP09",
+      "title": "Information Security Awareness Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP10",
+      "title": "Equipment Security Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP11",
+      "title": "Encryption and Cryptographic Controls Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP12",
+      "title": "Change Control Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP13",
+      "title": "Data Security Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP14",
+      "title": "Network Configuration & Security Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP15",
+      "title": "Servers Configuration & Security Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP16",
+      "title": "Application Development & Deployment Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP17",
+      "title": "Cloud Security & Compliance Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP18",
+      "title": "Digital Payment Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP19",
+      "title": "Vulnerability Management Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP20",
+      "title": "Information Technology Assets Disposal Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP21",
+      "title": "Information Security Incident Management Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP22",
+      "title": "Compliance Management Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP23",
+      "title": "Data Backup and Recovery Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    },
+    {
+      "policyId": "ISMSP24",
+      "title": "Information Technology Asset Disposal Policy",
+      "questions": 500,
+      "uniqueQuestions": 500
+    }
+  ]
+}

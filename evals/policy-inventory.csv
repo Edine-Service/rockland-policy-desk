@@ -1,0 +1,25 @@
+Policy ID,Title,Start Page,End Page,Pages,Searchable Controls,Evaluation Questions,Status
+ISMSP01,Password Security Policy,1,5,5,78,500,Draft
+ISMSP02,Acceptable Use Policy,6,10,5,72,500,Draft
+ISMSP03,Email Access and Usage Policy,11,14,4,57,500,Draft
+ISMSP04,Internet Access & Usage Policy,15,18,4,63,500,Draft
+ISMSP05,Removable Media Policy,19,21,3,47,500,Draft
+ISMSP06,Malware Protection Policy,22,24,3,40,500,Draft
+ISMSP07,Remote Access Policy,25,27,3,37,500,Draft
+ISMSP08,Privacy & Protection Policy,28,31,4,52,500,Draft
+ISMSP09,Information Security Awareness Policy,32,34,3,52,500,Draft
+ISMSP10,Equipment Security Policy,35,38,4,66,500,Draft
+ISMSP11,Encryption and Cryptographic Controls Policy,39,42,4,62,500,Draft
+ISMSP12,Change Control Policy,43,45,3,33,500,Draft
+ISMSP13,Data Security Policy,46,48,3,32,500,Draft
+ISMSP14,Network Configuration & Security Policy,49,52,4,68,500,Draft
+ISMSP15,Servers Configuration & Security Policy,53,56,4,72,500,Draft
+ISMSP16,Application Development & Deployment Policy,57,59,3,34,500,Draft
+ISMSP17,Cloud Security & Compliance Policy,60,61,2,21,500,Draft
+ISMSP18,Digital Payment Policy,62,63,2,25,500,Draft
+ISMSP19,Vulnerability Management Policy,64,66,3,45,500,Draft
+ISMSP20,Information Technology Assets Disposal Policy,67,69,3,47,500,Draft
+ISMSP21,Information Security Incident Management Policy,70,72,3,49,500,Draft
+ISMSP22,Compliance Management Policy,73,75,3,43,500,Draft
+ISMSP23,Data Backup and Recovery Policy,76,78,3,45,500,Draft
+ISMSP24,Information Technology Asset Disposal Policy,79,82,4,62,500,Draft
