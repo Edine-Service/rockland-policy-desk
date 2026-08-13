@@ -80,7 +80,7 @@ function addThinking() {
   conversation.insertAdjacentHTML("beforeend", `
     <div class="message assistant-message thinking" id="thinking">
       <div class="assistant-avatar">P</div>
-      <div class="message-content"><div class="message-meta">Policy Desk <span>Searching 1,202 controls</span></div><div class="bubble"><i></i><i></i><i></i></div></div>
+      <div class="message-content"><div class="message-meta">ISMS ChatBot <span>Searching 1,202 controls</span></div><div class="bubble"><i></i><i></i><i></i></div></div>
     </div>`);
 }
 
@@ -96,7 +96,7 @@ function addAssistantMessage(result) {
     <div class="message assistant-message">
       <div class="assistant-avatar">P</div>
       <div class="message-content">
-        <div class="message-meta">Policy Desk <span>${timeLabel()}</span></div>
+        <div class="message-meta">ISMS ChatBot <span>${timeLabel()}</span></div>
         <div class="bubble">
           <p>${escapeHtml(result.answer)}</p>
           ${citations ? `<div class="citation-row">${citations}</div><span class="confidence">Grounded in ${result.sources.length} cited control${result.sources.length === 1 ? "" : "s"}</span>` : `<span class="confidence caution">No supporting control found</span>`}

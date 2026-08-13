@@ -1,6 +1,6 @@
-# Rockland Policy Desk
+# ISMS Knowledge Portal
 
-Policy Desk is a free, static, evidence-grounded chatbot for Rockland's draft information-security policies. It runs in the browser without an API key and can be hosted on GitHub Pages or any static/worker host.
+ISMS Knowledge Portal includes an evidence-grounded ISMS ChatBot for Rockland's draft information-security policies. It runs in the browser without an API key and can be hosted on GitHub Pages or any static/worker host.
 
 ## Included knowledge base
 

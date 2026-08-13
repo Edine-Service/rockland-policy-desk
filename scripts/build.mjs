@@ -43,4 +43,4 @@ export default {
 };\n`;
 
 await writeFile(resolve(distDir, "server", "index.js"), worker);
-console.log(`Built Policy Desk with ${routes.length} verified assets, 24 draft policies, and 1,202 controls.`);
+console.log(`Built ISMS Knowledge Portal with ${routes.length} verified assets, 24 draft policies, and 1,202 controls.`);
