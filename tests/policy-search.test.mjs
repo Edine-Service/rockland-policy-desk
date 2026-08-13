@@ -5,6 +5,7 @@ import { answerQuestion, searchPolicy } from "../public/retrieval.js";
 
 const corpus = JSON.parse(await readFile(new URL("../public/policy.json", import.meta.url), "utf8"));
 const manifest = JSON.parse(await readFile(new URL("../evals/manifest.json", import.meta.url), "utf8"));
+const appSource = await readFile(new URL("../public/app.js", import.meta.url), "utf8");
 
 test("the complete draft corpus is indexed", () => {
   assert.equal(corpus.document.status, "Draft");
@@ -57,5 +58,20 @@ test("every control points to a valid policy page", () => {
     assert.ok(policy, `Unknown policy for ${control.id}`);
     assert.ok(control.page >= policy.pageStart && control.page <= policy.pageEnd, `Invalid page for ${control.id}`);
     assert.ok(control.text.length >= 8, `Empty control ${control.id}`);
+  }
+});
+
+test("every policy has three policy-specific chat suggestions", () => {
+  const suggestionRows = [...appSource.matchAll(/^\s*(ISMSP\d{2}):\s*(\[[^\n]+\]),?$/gm)];
+  assert.equal(suggestionRows.length, corpus.policies.length);
+  for (const [, policyId, questionsJson] of suggestionRows) {
+    const questions = JSON.parse(questionsJson);
+    assert.equal(questions.length, 3, `${policyId} should have three suggestions`);
+    const controls = corpus.controls.filter((control) => control.policyId === policyId);
+    for (const question of questions) {
+      const result = answerQuestion(question, controls, { policyId });
+      assert.equal(result.grounded, true, `${policyId} suggestion was not grounded: ${question}`);
+      assert.equal(result.sources[0].policyId, policyId);
+    }
   }
 });
